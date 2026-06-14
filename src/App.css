@@ -1,0 +1,25 @@
+body {
+    font-family: "Pacifico", cursive;
+}
+nav {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 32px;
+    font-family: "Brush Script MT", cursive;
+}
+nav a {
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.text-func a {
+    margin: 0 20px;
+}
+.icon-func a {
+    margin: 0 10px;
+}
