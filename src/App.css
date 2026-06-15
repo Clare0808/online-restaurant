@@ -1,5 +1,7 @@
 body {
     font-family: "Pacifico", cursive;
+    margin: 0;
+    padding: 0;
 }
 nav {
     padding: 20px 35px;

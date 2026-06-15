@@ -1,0 +1,57 @@
+.contentFrame {
+    height: 90vh;
+    font-family: "Pacifico", cursive;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    align-items: center;
+}
+.textFrame {
+    margin-left: 50px;
+}
+.slogan {
+    font-size: 40px;
+}
+.secSlogan {
+    font-size: 32px;
+    margin: 10px 0;
+}
+.content {
+    font-size: 22px;
+}
+img {
+    width: 500px;
+    height: auto;
+}
+.btn {
+    width: 120px;
+    height: 35px;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #f0c42d;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    color: #000000;
+    background-color: #ffea9d;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+}
+.dishBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dishImg {
+    width: 250px;
+    height: 250px;
+}

@@ -16,41 +16,46 @@ import { FaUser } from "react-icons/fa";
 
 import "./App.css";
 
+import bgImg from "./assets/background.jpg";
+
 function App() {
   return (
     <>
-      <Router>
-        <nav>
-          <div className="logo">Le Savor 西饗</div>
-          <div className="text-func">
-            <Link to="/">主頁</Link>
-            <Link to="/dish">菜單</Link>
-            <Link to="/review">評論</Link>
-            <Link to="/problem">客服中心</Link>
-          </div>
-          <div className="icon-func">
-            <Link to="/cart">
-              <FaShoppingCart />
-            </Link>
-            <Link to="/like">
-              <FaHeart />
-            </Link>
-            <Link to="/user">
-              <FaUser />
-            </Link>
-          </div>
-        </nav>
+      <div style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover", height: "auto" }}
+      >
+        <Router>
+          <nav>
+            <div className="logo">Le Savor 西饗</div>
+            <div className="text-func">
+              <Link to="/">主頁</Link>
+              <Link to="/dish">菜單</Link>
+              <Link to="/review">評論</Link>
+              <Link to="/problem">客服中心</Link>
+            </div>
+            <div className="icon-func">
+              <Link to="/cart">
+                <FaShoppingCart />
+              </Link>
+              <Link to="/like">
+                <FaHeart />
+              </Link>
+              <Link to="/user">
+                <FaUser />
+              </Link>
+            </div>
+          </nav>
 
-        <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/dish" element={<DishPage />}></Route>
-          <Route path="/review" element={<ReviewPage />}></Route>
-          <Route path="/problem" element={<ProblemPage />}></Route>
-          <Route path="/cart" element={<CartPage />}></Route>
-          <Route path="/like" element={<LikePage />}></Route>
-          <Route path="/user" element={<UserPage />}></Route>
-        </Routes>
-      </Router>
+          <Routes>
+            <Route path="/" element={<HomePage />}></Route>
+            <Route path="/dish" element={<DishPage />}></Route>
+            <Route path="/review" element={<ReviewPage />}></Route>
+            <Route path="/problem" element={<ProblemPage />}></Route>
+            <Route path="/cart" element={<CartPage />}></Route>
+            <Route path="/like" element={<LikePage />}></Route>
+            <Route path="/user" element={<UserPage />}></Route>
+          </Routes>
+        </Router>
+      </div>
     </>
   )
 }
