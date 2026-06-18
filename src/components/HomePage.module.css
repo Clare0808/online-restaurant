@@ -41,9 +41,21 @@ img {
     cursor: pointer;
 }
 
+.dishFrame,
+.specialFrame,
+.reviewFrame {
+    height: 100vh;
+    font-family: "Pacifico", cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .title {
     font-size: 32px;
     font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
 }
 .dishBox {
     width: 100%;
@@ -54,4 +66,162 @@ img {
 .dishImg {
     width: 250px;
     height: 250px;
+    margin: 0 50px;
+}
+.dishName {
+    font-size: 28px;
+    font-weight: bold;
+}
+.dishDisc {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.scoreBox {
+    display: flex;
+    align-items: center;
+}
+.scoreTitle {
+    font-size: 22px;
+    margin-right: 10px;
+}
+.scoreStars {
+    color: #f0c42d;
+    font-size: 24px;
+    margin: 0 3px;
+}
+
+.logo {
+    font-family: "Brush Script MT", cursive;
+}
+.specialBox1 {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.specialBox2 {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.specialEle {
+    height: 200px;
+    color: #ffffff;
+    background-color: #f0c42d;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.specialEle:hover {
+    color: #000000;
+    background-color: #ffea9d;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.specialIcon {
+    font-size: 36px;
+}
+.specialTitle {
+    font-size: 28px;
+    margin: 10px 0;
+}
+.specialDisc {
+    font-size: 20px;
+}
+
+.reviewFrame {
+    position: relative;
+}
+.reviewOutFrame {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviewBox {
+    width: 65%;
+    background-color: #ffffff;
+    border: 2px solid #f0c42d;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 0 40px;
+}
+.reviewUserBox {
+    display: flex;
+    align-items: center;
+}
+.reviewBox .scoreStars {
+    font-size: 26px;
+}
+.reviewContent {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.reviewUserBox img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.reviewUserIfon {
+    font-size: 20px;
+}
+.reviewUserName {
+    margin-bottom: 5px;
+}
+.lastPage,
+.nextPage {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  color: #ffffff;
+  background-color: #ffea9d;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 5px #ffea9d;
+  transition: all 0.5s ease;
+}
+.nextPage {
+    text-align: right;
+}
+.lastPage:hover,
+.nextPage:hover {
+  cursor: pointer;
+  background-color: #f0c42d;
+  box-shadow: 0px 0px 5px 5px #f0c42d;
+  transform: scale(1.05);
+}
+
+.contactBox {
+    width: calc(100% - 40px);
+    height: 120px;
+    color: #ffffff;
+    background-color: #f0c42d;
+    font-size: 20px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+}
+.contactTitle {
+    margin-bottom: 10px;
+}
+.contactIcon {
+    margin-right: 10px;
 }
