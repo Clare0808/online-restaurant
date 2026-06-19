@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "泰式綠咖哩飯",
+    "description": "香濃泰式綠咖哩搭配嫩滑雞肉與新鮮蔬菜，配上香噴噴的白飯，帶來濃郁的異國風味。",
+    "price": 320,
+    "image": "/images/rice/泰式綠咖哩飯.jpg",
+    "category": "rice"
+  },
+  {
+    "id": 3,
+    "name": "紫高麗菜燉飯",
+    "description": "色彩繽紛的紫高麗菜燉飯，搭配濃郁奶油醬汁與香濃起司，帶來獨特的口感與風味。",
+    "price": 260,
+    "image": "/images/rice/紫高麗菜燉飯.jpg",
+    "category": "rice"
+  },
+  {
+    "id": 4,
+    "name": "義式海鮮燉飯",
+    "description": "豐富海鮮搭配香濃番茄醬汁與義式香料，帶來鮮美滋味的義式海鮮燉飯。",
+    "price": 380,
+    "image": "/images/rice/義式海鮮燉飯.jpg",
+    "category": "rice"
+  },
+  {
+    "id": 5,
+    "name": "起司海鮮焗烤",
+    "description": "濃郁起司搭配新鮮海鮮與香料，焗烤至金黃酥脆，帶來豐富口感的美味享受。",
+    "price": 360,
+    "image": "/images/rice/起司海鮮焗烤.jpg",
+    "category": "rice"
+  },
+  {
+    "id": 6,
+    "name": "香菇燉飯",
+    "description": "香菇的濃郁香氣與奶油醬汁完美結合，帶來滑順口感的美味燉飯。",
+    "price": 260,
+    "image": "/images/rice/香菇燉飯.jpg",
+    "category": "rice"
+  },
+  {
+    "id": 7,
+    "name": "奶油培根義大利麵",
+    "description": "經典義大利麵搭配香濃奶油醬與酥脆培根，口感豐富，令人回味無窮。",
+    "price": 320,
+    "image": "/images/noodles/奶油培根義大利麵.jpg",
+    "category": "noodle"
+  },
+  {
+    "id": 8,
+    "name": "奶油白醬義大利麵",
+    "description": "滑順奶油白醬義大利麵，融合濃郁奶香與細緻口感，是一道令人難以抗拒的美味選擇。",
+    "price": 300,
+    "image": "/images/noodles/奶油白醬義大利麵.jpg",
+    "category": "noodle"
+  },
+  {
+    "id": 9,
+    "name": "茄汁肉醬寬扁麵",
+    "description": "經典茄汁肉醬寬扁麵，搭配香濃肉醬與新鮮番茄，帶來豐富的口感與美味享受。",
+    "price": 320,
+    "image": "/images/noodles/茄汁肉醬寬扁麵.jpg",
+    "category": "noodle"
+  },
+  {
+    "id": 10,
+    "name": "青醬寬管義大利麵",
+    "description": "清新羅勒青醬搭配寬管義大利麵，帶來濃郁香氣與獨特風味的完美結合。",
+    "price": 280,
+    "image": "/images/noodles/青醬寬管義大利麵.jpg",
+    "category": "noodle"
+  },
+  {
+    "id": 11,
+    "name": "青醬貝殼義大利麵",
+    "description": "鮮美貝殼義大利麵搭配香濃羅勒青醬，帶來清新爽口的味覺享受。",
+    "price": 280,
+    "image": "/images/noodle/青醬貝殼義大利麵.jpg",
+    "category": "noodle"
+  },
+  {
+    "id": 12,
+    "name": "碳烤豬肋排",
+    "description": "經典美式碳烤豬肋排，外層醬香濃郁，肉質鮮嫩多汁，搭配烤玉米和薯條，是一道令人垂涎的主菜。",
+    "price": 420,
+    "image": "/images/meat/碳烤豬肋排.jpg",
+    "category": "meat"
+  },
+  {
+    "id": 13,
+    "name": "香煎牛排佐松露奶油",
+    "description": "精選牛排經過香煎，搭配濃郁的松露奶油醬，帶來奢華的口感享受。",
+    "price": 580,
+    "image": "/images/meat/香煎牛排佐松露奶油.jpg",
+    "category": "meat"
+  },
+  {
+    "id": 14,
+    "name": "香煎牛排佐香蒜奶油",
+    "description": "嫩煎牛排搭配香蒜奶油醬，風味濃郁，肉質鮮美，是肉食愛好者的絕佳選擇。",
+    "price": 460,
+    "image": "/images/meat/香煎牛排佐香蒜奶油.jpg",
+    "category": "meat"
+  },
+  {
+    "id": 15,
+    "name": "香煎牛排佐黑胡椒",
+    "description": "經典香煎牛排搭配濃郁黑胡椒醬，帶來微辣的口感與豐富的風味。",
+    "price": 420,
+    "image": "/images/meat/香煎牛排佐黑胡椒.jpg",
+    "category": "meat"
+  },
+  {
+    "id": 16,
+    "name": "奶油濃湯",
+    "description": "濃郁滑順的奶油濃湯，採用新鮮食材熬製而成，帶來溫暖舒適的味覺享受。",
+    "price": 220,
+    "image": "/images/soup/奶油濃湯.jpg",
+    "category": "soup"
+  },
+  {
+    "id": 17,
+    "name": "奶油蔬菜濃湯",
+    "description": "豐富蔬菜與濃郁奶油完美結合，帶來滑順口感與營養滿分的美味湯品。",
+    "price": 250,
+    "image": "/images/soup/奶油蔬菜濃湯.jpg",
+    "category": "soup"
+  },
+  {
+    "id": 18,
+    "name": "番茄海鮮清湯",
+    "description": "新鮮番茄與多種海鮮熬製而成的清湯，酸甜開胃，帶來清爽的味覺享受。",
+    "price": 320,
+    "image": "/images/soup/番茄海鮮清湯.jpg",
+    "category": "soup"
+  },
+  {
+    "id": 19,
+    "name": "無花果沙拉",
+    "description": "新鮮無花果搭配多種蔬菜與堅果，淋上特製醬汁，帶來清爽健康的美味享受。",
+    "price": 380,
+    "image": "/images/salad/無花果沙拉.jpg",
+    "category": "salad"
+  },
+  {
+    "id": 20,
+    "name": "牛排沙拉",
+    "description": "嫩煎牛排搭配新鮮蔬菜與特製醬汁，帶來豐富口感與營養的沙拉選擇。",
+    "price": 450,
+    "image": "/images/salad/牛排沙拉.jpg",
+    "category": "salad"
+  },
+  {
+    "id": 21,
+    "name": "雞蛋豆干沙拉",
+    "description": "營養豐富的雞蛋與豆干搭配新鮮蔬菜，淋上特製醬汁，帶來清爽健康的美味享受。",
+    "price": 420,
+    "image": "/images/salad/雞蛋豆干沙拉.jpg",
+    "category": "salad"
+  },
+  {
+    "id": 22,
+    "name": "凍檸茶",
+    "price": 120,
+    "description": "經典港式飲品，清涼解渴的凍檸茶，融合了濃郁的紅茶與新鮮檸檬汁，帶來獨特的酸甜口感。",
+    "image": "/images/drinks/凍檸茶.jpg",
+    "category": "drink"
+  },
+  {
+    "id": 23,
+    "name": "土耳其咖啡",
+    "price": 180,
+    "description": "濃郁香醇的土耳其咖啡，採用細磨咖啡豆與香料慢煮而成，帶來獨特的風味與口感。",
+    "image": "/images/drinks/土耳其咖啡.png",
+    "category": "drink"
+  },
+  {
+    "id": 24,
+    "name": "檸檬茶",
+    "price": 150,
+    "description": "清新爽口的檸檬茶，融合了濃郁的紅茶與新鮮檸檬汁，帶來獨特的酸甜口感。",
+    "image": "/images/drinks/檸檬茶.jpg",
+    "category": "drink"
+  },
+  {
+    "id": 25,
+    "name": "鮮奶油可可",
+    "price": 200,
+    "description": "濃郁香甜的鮮奶油可可，搭配綿密的鮮奶油，帶來溫暖舒適的享受。",
+    "image": "/images/drinks/鮮奶油可可.jpg",
+    "category": "drink"
+  },
+  {
+    "id": 26,
+    "name": "司康",
+    "price": 120,
+    "description": "新鮮出爐的英式司康，外酥內軟，搭配奶油和果醬，完美的下午茶選擇。",
+    "image": "/images/deserts/司康.jpg",
+    "category": "deserts"
+  },
+  {
+    "id": 27,
+    "name": "巴斯克乳酪蛋糕",
+    "description": "濃郁滑順的巴斯克乳酪蛋糕，焦糖化的表面帶來獨特風味，適合喜愛乳酪的你。",
+    "price": 220,
+    "image": "/images/deserts/巴斯克乳酪蛋糕.jpg",
+    "category": "deserts"
+  },
+  {
+    "id": 28,
+    "name": "布朗尼蛋糕",
+    "description": "濃郁巧克力布朗尼，外酥內軟，搭配香草冰淇淋，是甜點愛好者的最愛。",
+    "price": 150,
+    "image": "/images/deserts/布朗尼蛋糕.jpg",
+    "category": "deserts"
+  },
+  {
+    "id": 29,
+    "name": "胡蘿蔔蛋糕",
+    "description": "經典胡蘿蔔蛋糕，加入核桃和香料，搭配奶油乳酪霜，口感豐富且健康。",
+    "price": 180,
+    "image": "/images/deserts/胡蘿蔔蛋糕.jpg",
+    "category": "deserts"
+  },
+  {
+    "id": 30,
+    "name": "香桃法國吐司",
+    "description": "香甜多汁的桃子搭配軟嫩法國吐司，撒上糖粉和楓糖漿，完美的早午餐選擇。",
+    "price": 150,
+    "image": "/images/deserts/香桃法國吐司.jpg",
+    "category": "deserts"
+  },
+  {
+    "id": 31,
+    "name": "馬芬蛋糕",
+    "description": "經典馬芬蛋糕，口感鬆軟，搭配各種口味選擇，如藍莓、巧克力或香蕉。",
+    "price": 120,
+    "image": "/images/deserts/馬芬蛋糕.jpg",
+    "category": "deserts"
+  }
+]

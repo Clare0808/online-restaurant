@@ -1,0 +1,113 @@
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.optionFrame {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.optionItem {
+    background-color: #ffffff;
+    font-size: 22px;
+    border: 2px solid #f0c42d;
+    border-radius: 20px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+.optionItem:hover {
+    color: #ffffff;
+    background-color: #f0c42d;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.dishFrame {
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.dishBox {
+    background-color: #ffffff;
+    border: 2px solid #f0c42d;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.dishBox:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.dishBox img {
+    width: 250px;
+}
+.dishInfo {
+    width: 100%;
+    font-size: 22px;
+    border-top: 1px solid #f0c42d;
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dishPrice {
+    color: #f0c42d;
+    font-weight: bold;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+    transition: opacity 0.3s ease;
+}
+.overlayShow {
+  opacity: 1;
+  pointer-events: auto;
+}
+.overlayHide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.slideIn {
+  animation: slideIn 1.5s ease forwards; /*動畫結束後保持在最後一幀*/
+}
+.fadeIn {
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

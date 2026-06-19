@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "全部",
+      "label": "all",
+      "click": false
+    },
+    {
+      "id": 2,
+      "name": "飯食",
+      "label": "rice",
+      "click": false
+    },
+    {
+      "id": 3,
+      "name": "麵食",
+      "label": "noodle",
+      "click": false
+    },
+    {
+      "id": 4,
+      "name": "肉類",
+      "label": "meat",
+      "click": false
+    },
+    {
+      "id": 5,
+      "name": "湯品",
+      "label": "soup",
+      "click": false
+    },
+    {
+      "id": 6,
+      "name": "沙拉",
+      "label": "salad",
+      "click": false
+    },
+    {
+      "id": 7,
+      "name": "飲料",
+      "label": "drink",
+      "click": false
+    },
+    {
+      "id": 8,
+      "name": "甜點",
+      "label": "deserts",
+      "click": false
+    }
+]
