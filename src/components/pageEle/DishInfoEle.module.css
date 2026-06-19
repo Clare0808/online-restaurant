@@ -1,0 +1,115 @@
+.contentFrame {
+    width: 60%;
+    background-color: #ffffff;
+    border: 2px solid #f0c42d;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+}
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contentFrame img {
+    width: 300px;
+    margin: 20px 0;
+}
+.textFrame {
+    font-size: 20px;
+    border-top: 1px solid #f0c42d;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: left;
+}
+.dishName {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.amountInfo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.numBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.numBtn {
+    width: 35px;
+    height: 35px;
+    font-weight: bold;
+    border: 1px solid #f0c42d;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin: 0px 20px;
+    transition: all 0.3s ease;
+}
+.numBtn:hover {
+    color: #ffffff;
+    background-color: #f0c42d;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.dishPrice {
+    color: #f0c42d;
+    font-weight: bold;
+}
+.btn {
+    width: 100px;
+    font-size: 22px;
+    color: #ffffff;
+    background-color: #f0c42d;
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    color: #000000;
+    background-color: #ffea9d;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.slideIn {
+    animation: slideIn 1.5s ease forwards;
+}
+.slideOut {
+    animation: slideOut 1.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px) translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) translate(-50%, -50%);
+    }
+}
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateY(0) translate(-50%, -50%);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px) translate(-50%, -50%);
+    }
+}
