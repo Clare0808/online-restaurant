@@ -16,7 +16,7 @@ import { FaUser } from "react-icons/fa";
 
 import "./App.css";
 
-import bgImg from "./assets/background.jpg";
+import bgImg from "./assets/img/background.jpg";
 
 function App() {
   return (

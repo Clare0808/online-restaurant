@@ -1,9 +1,11 @@
+import { useState, useEffect } from "react";
+
 import style from "./HomePage.module.css"
 
-import homepageImg from "../assets/homepage.png";
-import dishImg1 from "../assets/homepage1.png";
-import dishImg2 from "../assets/homepage2.png";
-import userImg from "../assets/user.jpg";
+import homepageImg from "../assets/img/homepage.png";
+import dishImg1 from "../assets/img/homepage1.png";
+import dishImg2 from "../assets/img/homepage2.png";
+import userImg from "../assets/img/user.jpg";
 
 import { 
     FaStar, 
@@ -67,25 +69,60 @@ function Stars ({ count }) {
 }
 
 function HomePage () {
+    const [showSlide, setShowSlide] = useState(false);
+    const [showFade, setShowFade] = useState(false);
+
+    useEffect(() => {
+        // 初始化動畫
+        setShowSlide(true);
+        setShowFade(true);
+
+        // 元素進入視窗後顯示動畫
+        const handleScroll = () => {
+            // 判斷元素是否進入視窗
+            document.querySelectorAll(".slideTarget").forEach((ele) => {
+                const rect = ele.getBoundingClientRect();
+
+                if (rect.top < window.innerHeight) {
+                    ele.classList.add(style.slideIn);
+                }
+            });
+        };
+
+        async function fetchData() {
+            try {
+                const res = await fetch("http://localhost/user");
+                const data = await res.json();
+                console.log(data);
+                } catch (err) {
+                console.error(err);
+            }
+        }
+        fetchData();
+
+        window.addEventListener("scroll", handleScroll); // 滾動畫面時進行檢查
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []); // 空陣列代表只在初次渲染時執行一次
+
     return (
         <>
             <div className={style.contentFrame}>
-                <div className={style.textFrame}>
-                    <div class={style.slogan}>細細品味西式料理的藝術。</div>
-                    <div class={style.secSlogan}>精緻餐飲，應該成為日常生活的一部分。</div>
-                    <div class={style.content}>
+                <div className={`${style.textFrame} ${showSlide ? style.slideIn : ""}`}>
+                    <div className={style.slogan}>細細品味西式料理的藝術。</div>
+                    <div className={style.secSlogan}>精緻餐飲，應該成為日常生活的一部分。</div>
+                    <div className={style.content}>
                         我們嚴選高品質食材，以主廚等級的專業手藝精心製作每一道料理，
-                        <br class={style.nextLine} />
+                        <br className={style.nextLine} />
                         讓您無論何時、在家中也能輕鬆享受餐廳級的西式饗宴。
                     </div>
                     <div className={style.btn}>了解更多</div>
                 </div>
-                <img src={homepageImg} />
+                <img src={homepageImg} className={`${showFade ? style.fadeIn : ""}`} />
             </div>
 
             <div className={style.dishFrame}>
                 <div className={style.title}>熱門菜色</div>
-                <div className={style.dishBox}>
+                <div className={`${style.dishBox} slideTarget`}>
                     <img src={dishImg1} className={style.dishImg} />
                     <div className={style.dishInfoBox}>
                         <div className={style.dishName}>茄汁肉醬寬扁麵</div>
@@ -98,7 +135,7 @@ function HomePage () {
                         </div> 
                     </div>
                 </div>
-                <div className={style.dishBox}>
+                <div className={`${style.dishBox} slideTarget`}>
                     <div className={style.dishInfoBox}>
                         <div className={style.dishName}>青醬貝殼義大利麵</div>
                         <div className={style.dishDisc}>
@@ -119,7 +156,7 @@ function HomePage () {
                 </div>
                 <div className={style.specialBox1}>
                     {infoData1.map(info => (
-                        <div className={style.specialEle} key={info.id}>
+                        <div className={`${style.specialEle} slideTarget`} key={info.id}>
                             <div className={style.specialIcon}>{info.icon}</div>
                             <div className={style.specialTitle}>{info.title}</div>
                             <div className={style.specialDisc}>{info.description}</div>
@@ -128,7 +165,7 @@ function HomePage () {
                 </div>
                 <div className={style.specialBox2}>
                     {infoData2.map(info => (
-                        <div className={style.specialEle} key={info.id}>
+                        <div className={`${style.specialEle} slideTarget`} key={info.id}>
                             <div className={style.specialIcon}>{info.icon}</div>
                             <div className={style.specialTitle}>{info.title}</div>
                             <div className={style.specialDisc}>{info.description}</div>
@@ -142,7 +179,7 @@ function HomePage () {
 
                 <div className={style.reviewOutFrame}>
                     <div className={style.lastPage}>〈</div>
-                    <div className={style.reviewBox}>
+                    <div className={`${style.reviewBox} slideTarget`}>
                         <Stars count={5} />
                         <div className={style.reviewContent}>
                             在家也能享受餐廳級的美味，服務也非常貼心，強烈推薦！

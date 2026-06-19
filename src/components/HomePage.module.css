@@ -128,7 +128,7 @@ img {
     color: #000000;
     background-color: #ffea9d;
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .specialIcon {
     font-size: 36px;
@@ -157,6 +157,11 @@ img {
     border-radius: 12px;
     padding: 30px;
     margin: 0 40px;
+    transition: all 0.3s ease;
+}
+.reviewBox:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 .reviewUserBox {
     display: flex;
@@ -224,4 +229,30 @@ img {
 }
 .contactIcon {
     margin-right: 10px;
+}
+
+.slideIn {
+  animation: slideIn 1.5s ease forwards; /*動畫結束後保持在最後一幀*/
+}
+.fadeIn {
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
