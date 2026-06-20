@@ -83,7 +83,11 @@ function ReviewPage () {
                     onClick={() => setShowEle(!showEle)}
                 ></div>
                 <div>
-                    <WriteReviewEle clickAdd={clickAdd} showEle={showEle} />
+                    <WriteReviewEle
+                        clickAdd={clickAdd}
+                        showEle={showEle}
+                        setShowEle={setShowEle}
+                     />
                 </div>
                 </div>
             }
