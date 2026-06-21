@@ -93,23 +93,10 @@
   pointer-events: none;
 }
 
-.slideIn {
-  animation: slideIn 1.5s ease forwards; /*動畫結束後保持在最後一幀*/
-}
 .fadeIn {
     animation: fadeIn 1.5s ease forwards;
 }
 
-@keyframes slideIn {
-    from { 
-        opacity: 0; 
-        transform: translateY(20px); 
-    }
-    to { 
-        opacity: 1; 
-        transform: translateY(0); 
-    }
-}
 @keyframes fadeIn {
     from {
         opacity: 0;

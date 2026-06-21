@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import style from "./ReviewPage.module.css";
 
@@ -45,13 +45,18 @@ function Stars ({ count }) {
 function ReviewPage () {
     const [clickAdd, setClickAdd] = useState(false);
     const [showEle, setShowEle] = useState(false);
+    const [showFade, setShowFade] = useState(false);
+
+    useEffect(() => {
+        setShowFade(true);
+    }, []);
 
     return (
         <>
             <div className={style.title}>顧客回饋</div>
             <div className={style.reviewFrame}>
                 {reviewData.map((review) => (
-                    <div className={style.reviewBox} key={review.id}>
+                    <div className={`${style.reviewBox} ${showFade ? style.fadeIn : ""}`} key={review.id}>
                         <Stars count={review.score} />
                         <div className={style.reviewContent}>
                             {review.content}
