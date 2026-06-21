@@ -1,0 +1,85 @@
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+.questionFrame {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.questionBox {
+    width: 80%;
+    font-size: 22px;
+}
+.questionContent {
+    color: #ffffff;
+    background-color: #f0c42d;
+    border-radius: 12px;
+    padding: 20px 10px;
+}
+.answer {
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 2px solid #f0c42d;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.addBtn {
+    width: 80px;
+    height: 80px;
+    color: #ffffff;
+    background-color: #f0c42d;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 0.3s ease;
+}
+.addBtn:hover {
+    color: #000000;
+    background-color: #ffea9d;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.slideDownIn {
+    max-height: 120px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    animation: slideDownIn 1s ease forwards;
+}
+.slideDownOut {
+    max-height: 0px;
+    margin: 0;
+    animation: slideDownOut 1s ease forwards;
+}
+
+@keyframes slideDownIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+@keyframes slideDownOut {
+    from {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    to { 
+        opacity: 0; 
+        transform: translateY(-20px); 
+    }
+}
