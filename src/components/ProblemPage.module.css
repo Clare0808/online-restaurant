@@ -29,26 +29,45 @@
     padding: 10px;
 }
 
-.addBtn {
+.chatBtn {
     width: 80px;
     height: 80px;
     color: #ffffff;
     background-color: #f0c42d;
-    font-size: 38px;
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
-    line-height: 80px;
+    line-height: 100px;
     border-radius: 50%;
     position: fixed;
     bottom: 40px;
     right: 40px;
     transition: all 0.3s ease;
 }
-.addBtn:hover {
+.chatBtn:hover {
     color: #000000;
     background-color: #ffea9d;
     cursor: pointer;
     transform: scale(1.05);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+    transition: opacity 0.3s ease;
+}
+.overlayShow {
+  opacity: 1;
+  pointer-events: auto;
+}
+.overlayHide {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .slideDownIn {
