@@ -1,0 +1,134 @@
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+.contentFrame {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.dishBox {
+    width: 85%;
+    background-color: #ffffff;
+    border: 2px solid #f0c42d;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    width: 160px;
+    height: 160px;
+}
+.dishInfoFrame {
+    width: 100%;
+    border-left: 1px solid #f0c42d;
+    border-right: 1px solid #f0c42d;
+    margin: 0 20px;
+    padding: 20px;
+}
+.dishInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dishName {
+    font-size: 24px;
+}
+.numBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.numBtn {
+    width: 35px;
+    height: 35px;
+    font-weight: bold;
+    border: 1px solid #f0c42d;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    margin: 0px 20px;
+    transition: all 0.3s ease;
+}
+.numBtn:hover {
+    color: #ffffff;
+    background-color: #f0c42d;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.funcFrame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.price {
+    color: #f0c42d;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+.checkbox {
+  appearance: none; /* 移除預設樣式 */
+  width: 25px;
+  height: 25px;
+  border: 1px solid #f0c42d;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.checkbox:checked {
+  color: #ffffff;
+  background-color: #f0c42d;
+}
+.cancelBtn {
+  color: #f0c42d;
+  font-size: 26px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+.cancelBtn:hover {
+  color: #ffea9d;
+  cursor: pointer;
+}
+.endBan {
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 2px solid #f0c42d;
+    padding: 20px 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+}
+.totalPrice {
+    color: #f0c42d;
+    font-size: 28px;
+    font-weight: bold;
+}
+.btn {
+    width: 100px;
+    font-size: 22px;
+    color: #ffffff;
+    background-color: #f0c42d;
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 30px;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    color: #000000;
+    background-color: #ffea9d;
+    cursor: pointer;
+    transform: scale(1.1);
+}
