@@ -7,7 +7,6 @@ import DishPage from "./components/DishPage";
 import ReviewPage from "./components/ReviewPage";
 import ProblemPage from "./components/ProblemPage";
 import CartPage from "./components/CartPage";
-import LikePage from "./components/LikePage";
 import UserPage from "./components/UserPage";
 
 import { FaShoppingCart } from "react-icons/fa";
@@ -36,9 +35,6 @@ function App() {
               <Link to="/cart">
                 <FaShoppingCart />
               </Link>
-              <Link to="/like">
-                <FaHeart />
-              </Link>
               <Link to="/user">
                 <FaUser />
               </Link>
@@ -51,7 +47,6 @@ function App() {
             <Route path="/review" element={<ReviewPage />}></Route>
             <Route path="/problem" element={<ProblemPage />}></Route>
             <Route path="/cart" element={<CartPage />}></Route>
-            <Route path="/like" element={<LikePage />}></Route>
             <Route path="/user" element={<UserPage />}></Route>
           </Routes>
         </Router>
