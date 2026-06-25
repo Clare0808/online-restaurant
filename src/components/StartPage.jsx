@@ -14,6 +14,7 @@ function StartPage () {
     useEffect (() => {
         const dishEle = document.querySelectorAll("#dish");
         const logoEle = document.querySelector("#logo");
+        const btnEle = document.querySelector("#btn");
 
         setTimeout(() => {
             dishEle.forEach((ele) => {
@@ -22,6 +23,10 @@ function StartPage () {
             
             logoEle.style.display = "block";
         }, 4600);
+
+        setTimeout(() => {
+            btnEle.style.display = "block";
+        }, 6300);
     }, []);
 
     return (
@@ -35,6 +40,7 @@ function StartPage () {
                 <img className={style.dishImg7} id="dish" src={dishImg7} />
                 <img className={style.dishImg8} id="dish" src={dishImg8} />
                 <div className={style.logo} id="logo">Le Savor 西饗</div>
+                <div className={style.startBtn} id="btn">開始</div>
             </div>
         </>
     )

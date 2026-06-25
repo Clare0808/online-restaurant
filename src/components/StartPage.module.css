@@ -83,6 +83,17 @@
     transform: translate(-50%, -50%);
     opacity: 0;
 }
+.startBtn {
+    font-size: 26px;
+    display: none;
+    position: absolute;
+    top: calc(50% + 80px);
+    left: 50%;
+    animation: shine 1.8s linear infinite;
+}
+.startBtn {
+    cursor: pointer;
+}
 
 @keyframes move1 {
     20% {
@@ -300,5 +311,16 @@
     100% {
         font-size: 92px;
         opacity: 1;
+    }
+}
+@keyframes shine {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
