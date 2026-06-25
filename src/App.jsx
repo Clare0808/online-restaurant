@@ -8,6 +8,7 @@ import ReviewPage from "./components/ReviewPage";
 import ProblemPage from "./components/ProblemPage";
 import CartPage from "./components/CartPage";
 import UserPage from "./components/UserPage";
+import StartPage from './components/StartPage';
 
 import { FaShoppingCart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
@@ -20,6 +21,7 @@ import bgImg from "./assets/img/background.jpg";
 function App() {
   return (
     <>
+      <StartPage />
       <div style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover", height: "auto" }}
       >
         <Router>
