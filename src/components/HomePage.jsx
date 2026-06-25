@@ -117,7 +117,7 @@ function HomePage () {
                     </div>
                     <div className={style.btn}>了解更多</div>
                 </div>
-                <img src={homepageImg} className={`${showFade ? style.fadeIn : ""}`} />
+                <img src={homepageImg} className={`${style.homepageImg} ${showFade ? style.fadeIn : ""}`} />
             </div>
 
             <div className={style.dishFrame}>

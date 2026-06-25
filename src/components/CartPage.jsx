@@ -11,7 +11,7 @@ function CartPage () {
             <div className={style.title}>購物車</div>
             <div className={style.contentFrame}>
                 <div className={style.dishBox}>
-                    <img src={dishImg} />
+                    <img className={style.dishImg} src={dishImg} />
                     <div className={style.dishInfoFrame}>
                         <div className={style.dishInfo}>
                             <div className={style.dishName}>Test</div>
