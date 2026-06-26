@@ -17,6 +17,7 @@ func main() {
 	api.RegisterDishRoutes(router)
 	api.RegisterReviewRoutes(router)
 	api.RegisterContactRoutes(router)
+	api.RegisterBuyRoutes(router)
 
 	router.Run(":80")
 }

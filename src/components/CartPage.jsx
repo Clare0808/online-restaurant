@@ -6,6 +6,34 @@ import { FaTrash } from "react-icons/fa";
 import { MdOutlineIndeterminateCheckBox } from "react-icons/md";
 
 function CartPage () {
+    const sendClick = async () => {
+        const resp = await fetch("http://localhost/send-buy", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            },
+                body: JSON.stringify({
+                list: {
+                    email: "test@gmail.com",
+                    dish: [
+                        {
+                            name: "test",
+                            amount: 3,
+                            price: 100,
+                            total: 300,
+                        }
+                    ],
+                    total: 300,
+                    code: "test",
+                    date: "2026/2/21",
+                }
+            }),
+        });
+
+        const data = await resp.json();
+        console.log(data);
+    };
+
     return (
         <>
             <div className={style.title}>購物車</div>
@@ -32,7 +60,7 @@ function CartPage () {
 
             <div className={style.endBan}>
                 <div className={style.totalPrice}>$1000</div>
-                <div className={style.btn}>結帳</div>
+                <div className={style.btn} onClick={sendClick}>結帳</div>
             </div>
         </>
     )
