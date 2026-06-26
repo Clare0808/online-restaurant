@@ -91,7 +91,7 @@
     left: 50%;
     animation: shine 1.8s linear infinite;
 }
-.startBtn {
+.startBtn:hover {
     cursor: pointer;
 }
 

@@ -19,10 +19,19 @@ import "./App.css";
 import bgImg from "./assets/img/background.jpg";
 
 function App() {
+  const [showPage, setShowPage] = useState(false);
+
   return (
     <>
-      <StartPage />
-      <div style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover", height: "auto" }}
+      {!showPage && 
+        <StartPage showPage={showPage} setShowPage={setShowPage} />
+      }
+      <div style={{
+          backgroundImage: `url(${bgImg})`,
+          backgroundSize: "cover",
+          height: "auto",
+          display: showPage ? "block" : "none"
+        }}
       >
         <Router>
           <nav>

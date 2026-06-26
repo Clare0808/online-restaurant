@@ -10,7 +10,7 @@ import dishImg6 from "../assets/img/homepage6.jpg";
 import dishImg7 from "../assets/img/homepage7.jpg";
 import dishImg8 from "../assets/img/homepage8.jpg";
 
-function StartPage () {
+function StartPage ({ showPage, setShowPage }) {
     useEffect (() => {
         const dishEle = document.querySelectorAll("#dish");
         const logoEle = document.querySelector("#logo");
@@ -40,7 +40,7 @@ function StartPage () {
                 <img className={style.dishImg7} id="dish" src={dishImg7} />
                 <img className={style.dishImg8} id="dish" src={dishImg8} />
                 <div className={style.logo} id="logo">Le Savor 西饗</div>
-                <div className={style.startBtn} id="btn">開始</div>
+                <div className={style.startBtn} id="btn" onClick={() => setShowPage(true)}>開始</div>
             </div>
         </>
     )

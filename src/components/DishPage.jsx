@@ -52,7 +52,7 @@ function DishPage () {
     <>
       {
         clickDish && 
-        <div className={style.ele}>
+        <div>
           <div
             className={`${style.overlay} ${showEle ? style.overlayShow : style.overlayHide}`}
             onClick={() => setShowEle(!showEle)}
