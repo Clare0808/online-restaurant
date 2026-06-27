@@ -9,7 +9,7 @@
     position: absolute;
     top: 15%;
     left: 15%;
-    animation: move1 4.6s linear forwards;
+    animation: move1 4.2s linear forwards;
     transform: translate(-50%, -50%);
 }
 .dishImg3 {
@@ -19,7 +19,7 @@
     position: absolute;
     top: 15%;
     left: 40%;
-    animation: move3 4.6s linear forwards;
+    animation: move3 4.2s linear forwards;
     transform: translate(-50%, -50%);
 }
 .dishImg4 {
@@ -29,7 +29,7 @@
     position: absolute;
     top: 15%;
     left: 65%;
-    animation: move4 4.6s linear forwards;
+    animation: move4 4.2s linear forwards;
     transform: translate(-50%, -50%);
 }
 .dishImg5 {
@@ -39,7 +39,7 @@
     position: absolute;
     top: 15%;
     left: 85%;
-    animation: move5 4.6s linear forwards;
+    animation: move5 4.2s linear forwards;
     transform: translate(-50%, -50%);
 }
 .dishImg6 {
@@ -49,7 +49,7 @@
     position: absolute;
     top: 85%;
     left: 20%;
-    animation: move6 4.6s linear forwards;
+    animation: move6 4.2s linear forwards;
     transform: translate(-50%, -50%);
 }
 .dishImg7 {
@@ -59,7 +59,7 @@
     position: absolute;
     top: 85%;
     left: 50%;
-    animation: move7 4.6s linear forwards;
+    animation: move7 4.2s linear forwards;
     transform: translate(-50%, -50%);
 }
 .dishImg8 {
@@ -69,7 +69,7 @@
     position: absolute;
     top: 85%;
     left: 80%;
-    animation: move8 4.6s linear forwards;
+    animation: move8 4.2s linear forwards;
     transform: translate(-50%, -50%);
 }
 .logo {
@@ -79,7 +79,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    animation: large 1.6s linear forwards;
+    animation: large 1s linear forwards;
     transform: translate(-50%, -50%);
     opacity: 0;
 }

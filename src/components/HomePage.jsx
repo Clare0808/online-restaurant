@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import style from "./HomePage.module.css"
 
-import homepageImg from "../assets/img/homepage.png";
+import homepageImg from "../assets/img/homepage9.jpg";
 import dishImg1 from "../assets/img/homepage1.png";
 import dishImg2 from "../assets/img/homepage2.png";
 import userImg from "../assets/img/user.jpg";
@@ -87,6 +87,21 @@ function HomePage () {
                     ele.classList.add(style.slideIn);
                 }
             });
+
+            document.querySelectorAll(".slideRTarget").forEach((ele) => {
+                const rect = ele.getBoundingClientRect();
+
+                if (rect.top < window.innerHeight) {
+                    ele.classList.add(style.slideInR);
+                }
+            });
+            document.querySelectorAll(".slideLTarget").forEach((ele) => {
+                const rect = ele.getBoundingClientRect();
+
+                if (rect.top < window.innerHeight) {
+                    ele.classList.add(style.slideInL);
+                }
+            });
         };
 
         async function fetchData() {
@@ -108,12 +123,14 @@ function HomePage () {
         <>
             <div className={style.contentFrame}>
                 <div className={`${style.textFrame} ${showSlide ? style.slideIn : ""}`}>
-                    <div className={style.slogan}>細細品味西式料理的藝術。</div>
-                    <div className={style.secSlogan}>精緻餐飲，應該成為日常生活的一部分。</div>
-                    <div className={style.content}>
-                        我們嚴選高品質食材，以主廚等級的專業手藝精心製作每一道料理，
-                        <br className={style.nextLine} />
-                        讓您無論何時、在家中也能輕鬆享受餐廳級的西式饗宴。
+                    <div className={style.textBox}>
+                        <div className={style.slogan}>細細品味西式料理的藝術。</div>
+                        <div className={style.secSlogan}>精緻餐飲，應該成為日常生活的一部分。</div>
+                        <div className={style.content}>
+                            我們嚴選高品質食材，以主廚等級的專業手藝精心製作每一道料理，
+                            <br className={style.nextLine} />
+                            讓您無論何時、在家中也能輕鬆享受餐廳級的西式饗宴。
+                        </div>
                     </div>
                     <div className={style.btn}>了解更多</div>
                 </div>
@@ -122,7 +139,7 @@ function HomePage () {
 
             <div className={style.dishFrame}>
                 <div className={style.title}>熱門菜色</div>
-                <div className={`${style.dishBox} slideTarget`}>
+                <div className={`${style.dishBox} slideRTarget`}>
                     <img src={dishImg1} className={style.dishImg} />
                     <div className={style.dishInfoBox}>
                         <div className={style.dishName}>茄汁肉醬寬扁麵</div>
@@ -135,7 +152,7 @@ function HomePage () {
                         </div> 
                     </div>
                 </div>
-                <div className={`${style.dishBox} slideTarget`}>
+                <div className={`${style.dishBox} slideLTarget`}>
                     <div className={style.dishInfoBox}>
                         <div className={style.dishName}>青醬貝殼義大利麵</div>
                         <div className={style.dishDisc}>

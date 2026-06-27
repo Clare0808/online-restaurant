@@ -2,12 +2,15 @@
     height: 90vh;
     font-family: "Pacifico", cursive;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-rows: 60% 40%;
     justify-content: center;
     align-items: center;
 }
 .textFrame {
-    margin-left: 50px;
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 }
 .slogan {
     font-size: 40px;
@@ -20,8 +23,9 @@
     font-size: 22px;
 }
 .homepageImg {
-    width: 500px;
-    height: auto;
+    width: 95vw;
+    height: 300px;
+    object-fit: cover;
 }
 .btn {
     width: 120px;
@@ -31,9 +35,7 @@
     background-color: #f0c42d;
     border-radius: 12px;
     text-align: center;
-    line-height: 35px;
-    margin-top: 30px;
-    transition: all 0.3s ease;
+    line-height: 35px;;
 }
 .btn:hover {
     color: #000000;
@@ -237,6 +239,12 @@
 .fadeIn {
     animation: fadeIn 1.5s ease forwards;
 }
+.slideInR {
+    animation: slideInR 1.5s ease forwards;
+}
+.slideInL {
+    animation: slideInL 1.5s ease forwards;
+}
 
 @keyframes slideIn {
     from { 
@@ -254,5 +262,25 @@
     }
     to {
         opacity: 1;
+    }
+}
+@keyframes slideInR {
+    from { 
+        opacity: 0; 
+        transform: translateX(40px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+@keyframes slideInL {
+    from { 
+        opacity: 0; 
+        transform: translateX(-40px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
     }
 }
