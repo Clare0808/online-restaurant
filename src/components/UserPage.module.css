@@ -1,0 +1,103 @@
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+.page {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.userInfoFrame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentFrame {
+    width: 80%;
+    background-color: #ffffff;
+    border: 2px solid #f0c42d;
+    border-radius: 12px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.userInfoBox {
+    width: 75%;
+    font-size: 24px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.userImg {
+    width: 300px;
+    height: 300px;
+}
+.imgPencil,
+.pencil {
+    color: #f0c42d;
+    border-radius: 50%;
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+.imgPencil:hover,
+.pencil:hover {
+    color: #ffffff;
+    background-color: #f0c42d;
+    padding: 8px;
+    cursor: pointer;
+}
+.imgPencil {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.subTitle {
+    color: #f0c42d;
+    font-size: 28px;
+    font-weight: bold;
+}
+.orderFrame {
+    max-height: 450px;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+.orderBox {
+    margin: 10px 0;
+}
+.orderInfoBox,
+.dishBox,
+.orderPriceBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.orderInfoBox,
+.orderPriceBox {
+    font-size: 22px;
+}
+.dishBox {
+    font-size: 20px;
+    padding-left: 20px;
+}
+.orderInfo {
+    margin: 10px 0;
+}
+.orderDate {
+    color: #9d9d9d;
+}
+.dishInfo {
+    margin: 5px 0;
+}
+.orderPriceBox {
+    border-top: 1px solid #f0c42d;
+}
+.orderPrice {
+    font-weight: bold;
+}
